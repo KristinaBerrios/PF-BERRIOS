@@ -1,0 +1,32 @@
+.form-container {
+    display: $form-container-display;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    @include background-color;
+    border-radius: 5px;
+    border-bottom-color: $keyColor;
+    padding: 1%;
+}
+
+.form-row {
+    display: $form-row-display;
+    $form-row-template-columns: repeat(2, 1fr);
+    $form-row-gap: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-submit {
+    display: $form-submit-display;
+@include background-color;
+    color: $color-white;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}

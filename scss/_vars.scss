@@ -1,0 +1,121 @@
+//Fonts
+
+$font-family: 'Roboto', sans-serif;
+$font-weight-light: 100;
+$font-weight-regular: 400;
+$font-weight-medium: 700;
+
+//Colors
+$mainColor:black;
+$secondaryColor: #B3B3B3;
+$keyColor: #f7f2f2;
+$backgroundColor: #262525;
+$color-white: #f7f2f2;
+$color-card-text: $color-white;
+$color-footer: $mainColor;
+$color-footer-text: $color-white;
+
+// Headings
+
+$heading-color: $color-white;
+$heading-font-family: $font-family;
+$heading-font-weight: $font-weight-medium;
+$h1-font-size: 3em;
+$h2-font-size: 2em;
+$h3-font-size: 1.8em;
+$h4-font-size: 0.8em;
+
+// Paragraphs
+
+$paragraph-color: $color-white;
+$paragraph-font-family: $font-family;
+$paragraph-font-weight: $font-weight-light;
+$paragraph-font-size: 1.5em;
+$paragraph-line-height: 2em;
+$paragraph-margin-left: 10px;
+$paragraph-margin-top: 5px;
+$paragraph-padding: 10px;
+
+// Labels
+
+$label-color: $secondaryColor;
+
+// Header
+
+$header-img-width: 60%;
+
+// Lists
+
+$list-style: none;
+$list-padding: 0;
+$list-margin: 0;
+
+// Footer
+
+$footer-height: 40%;
+
+// Buttons
+
+$button-bg-color: $mainColor;
+$button-hover-color: $secondaryColor;
+$button-hover-text-decoration: underline;
+$button-hover-scale: 1.2;
+$button-text-color: $color-white;
+$button-text-decoration: none;
+$button-font-family: $font-family;
+$button-font-weight: $font-weight-medium;
+$bg-button-border-color: $color-white;
+
+// Forms
+
+$form-container-display: grid;
+$form-container-template-columns: 1fr;
+$form-container-gap: 1rem;
+$form-input-bg-color: transparent;
+$form-input-border-radius: 5px;
+$form-input-border-bottom-color: $color-white;
+$form-input-padding: 1%;
+$form-row-display: grid;
+$form-row-template-columns: repeat(2, 1fr);
+$form-row-gap: 2rem;
+$form-group-display: flex;
+$form-group-flex-direction: column;
+$form-submit-display: block;
+$form-submit-bg-color: transparent;
+$form-submit-color: $color-white;
+$form-submit-margin: 20px auto;
+$form-submit-padding: 10px 20px;
+$form-submit-border-radius: 5px;
+$form-submit-border: 2px solid $color-white;
+$form-submit-cursor: pointer;
+$form-submit-transition: 0.3s ease;
+
+// Sections
+
+$section-container-width: 100%;
+$section-container-margin: 0 10px;
+$section-container-padding: 20px;
+
+// About Section
+
+$about-section-display: flex;
+$about-section-flex-wrap: wrap;
+
+// Gallery
+
+$gallery-width: 70%;
+$gallery-height: 50%;
+$gallery-display: flex;
+$gallery-align: start;
+$gallery-justify-content: flex-start;
+$gallery-img-width: 100%;
+$gallery-img-height: 70%;
+$gallery-img-object-fit: cover;
+$gallery-img-margin: 5px;
+
+// Description
+
+$description-flex: 1;
+$description-margin: 2%;
+$description-padding: 5px;
+$description-font-size: 1rem;

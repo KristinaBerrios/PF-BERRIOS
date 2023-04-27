@@ -1,0 +1,185 @@
+$breakpoints: (
+    xs: 576px,
+    sm: 768px,
+    md: 992px,
+    lg: 1200px
+);
+
+body {
+    background-color: $mainColor;
+}
+
+.image-container {
+    max-width: 90%;
+    height: auto;
+}
+
+img {
+    display: flex;
+    width: $header-img-width;
+    height: auto;
+}
+
+
+h1 {
+    color: $color-white;
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+h2,
+h3 {
+    color: $color-white;
+    font-family: $font-family;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    color: $keyColor;
+    font-family: $font-weight-medium;
+    font-weight: 100;
+    font-size: 0.8em;
+}
+
+div {
+    ul {
+        li {
+            a {
+                color: $keyColor;
+
+            }
+        }
+    }
+}
+
+p {
+    color: $color-white;
+    font-family: $font-family;
+    font-weight: $font-weight-light;
+    font-size: 1.5em;
+    line-height: 2em;
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+label {
+    color: $secondaryColor;
+}
+
+.button {
+    img {
+        width: 70px;
+    }
+}
+
+.bg-button {
+    border-color: $color-white;
+}
+
+.bg-transparent-30 {
+    background-color: $secondaryColor !important;
+}
+
+.card-text {
+    color: $keyColor;
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family;
+}
+
+.container {
+    width: 100%;
+    margin: 0 10px;
+    padding: 20px;
+}
+
+.about-section {
+    display: $about-section-display;
+    flex-wrap: $about-section-flex-wrap;
+}
+
+.description {
+    $description-flex: 1;
+    $description-margin: 2%;
+    $description-padding: 5px;
+    $description-font-size: 1rem
+}
+
+.margen-h2 {
+    margin: 5%;
+}
+
+.cards-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex-basis: calc(33.33% - 10px);
+    background-color: transparent;
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    flex-basis: 100%;
+}
+
+.card-border {
+    flex-basis: calc(33.33% - 10px);
+    background-color: transparent;
+    border: solid 1px white;
+}
+
+.card-title {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.bg-footer {
+    background-color: $mainColor;
+}
+
+.footer {
+    height: 40%;
+}
+
+.footer-text {
+    color: $color-white;
+}
+
+.footer-text-decoration {
+    text-decoration: none;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cards-section {
+        flex-direction: column;
+    }
+}

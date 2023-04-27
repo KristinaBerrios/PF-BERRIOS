@@ -1,0 +1,53 @@
+@mixin font {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  @mixin heading($size, $weight) {
+    color: $color-white;
+    @include font;
+    font-weight: $weight;
+    font-size: $size;
+  }
+  
+  @mixin paragraph {
+    color:$color-white;
+    @include font;
+    font-weight: 100;
+    font-size: 1.5em;
+    line-height: 2em;
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 10px;
+  }
+  
+  @mixin button {
+    display: block;
+    background-color: transparent;
+    color:$color-white;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+    @include font;
+    font-weight: 700;
+  }
+  
+  @mixin grid($columns, $gap) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+  }
+  
+  @mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+  }
+  
+  @mixin transparent-background($alpha: 0.3) {
+    background-color: rgba(255, 255, 255, $alpha);
+  }
+  
