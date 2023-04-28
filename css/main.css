@@ -1,6 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+.navbar-text {
+  color: #f7f2f2;
+}
+
 body {
-  background-color: black;
+  background-color: #262525;
+}
+
+.image-container {
+  max-width: 90%;
+  height: auto;
+}
+
+img {
+  display: flex;
+  width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -32,6 +47,10 @@ h4 {
   font-size: 0.8em;
 }
 
+div ul li a {
+  color: #f7f2f2;
+}
+
 p {
   color: #f7f2f2;
   font-family: "Roboto", sans-serif;
@@ -56,7 +75,7 @@ label {
 }
 
 .bg-transparent-30 {
-  background-color: #B3B3B3 !important;
+  background-color: #B3B3B3;
 }
 
 .card-text {
@@ -139,38 +158,26 @@ body {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  .cards-section {
-    flex-direction: column;
-  }
-}
-.botonera {
-  background-color: black;
-}
-.botonera img {
-  width: 100px;
-}
-.botonera nav ul li a:hover {
-  color: #B3B3B3;
-  text-decoration: underline;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #262525;
+  background-color: black;
   color: #f7f2f2;
   padding: 20px;
 }
-nav a {
+nav .navbar-brand img {
+  width: 60%;
+}
+nav ul.navbar-nav li a {
   color: #f7f2f2;
   text-decoration: none;
   font-size: 18px;
   margin: 0 10px;
 }
-nav a:hover {
+nav ul.navbar-nav li a:hover {
   text-decoration: underline;
+  color: #B3B3B3;
 }
 nav .logo {
   font-size: 24px;
@@ -181,6 +188,7 @@ nav .logo {
 nav .nav-links {
   display: flex;
   align-items: center;
+  color: #f7f2f2;
   list-style: none;
 }
 nav .nav-links li {
@@ -201,4 +209,108 @@ nav .nav-links li:last-child {
 
 .gallery-margin {
   padding-bottom: 15%;
+}
+
+/* Grid */
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+}
+
+.row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+[class*=col-] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form input[type=text],
+.form input[type=email],
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px 1px #B3B3B3;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form input[type=submit] {
+  background-color: #262525;
+  color: #B3B3B3;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form input[type=submit]:hover {
+  background-color: #8d8d8e;
 }

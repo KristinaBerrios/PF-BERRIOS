@@ -14,7 +14,7 @@ $color-white: #f7f2f2;
 $color-card-text: $color-white;
 $color-footer: $mainColor;
 $color-footer-text: $color-white;
-
+$borderColor: 1px $secondaryColor;
 // Headings
 
 $heading-color: $color-white;
@@ -24,6 +24,11 @@ $h1-font-size: 3em;
 $h2-font-size: 2em;
 $h3-font-size: 1.8em;
 $h4-font-size: 0.8em;
+
+//nav
+
+$navbar-text-color: $keyColor;
+
 
 // Paragraphs
 
@@ -42,13 +47,16 @@ $label-color: $secondaryColor;
 
 // Header
 
-$header-img-width: 60%;
+$header-img-width: 100%;
 
 // Lists
 
 $list-style: none;
 $list-padding: 0;
 $list-margin: 0;
+
+//form
+//$enable-grid-classes
 
 // Footer
 

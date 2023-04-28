@@ -5,8 +5,12 @@ $breakpoints: (
     lg: 1200px
 );
 
+.navbar-text {
+    color: $navbar-text-color;
+  }
+
 body {
-    background-color: $mainColor;
+    background-color: $backgroundColor;
 }
 
 .image-container {
@@ -87,7 +91,7 @@ label {
 }
 
 .bg-transparent-30 {
-    background-color: $secondaryColor !important;
+    background-color: $secondaryColor;
 }
 
 .card-text {
@@ -142,7 +146,7 @@ body {
 
 .card-border {
     flex-basis: calc(33.33% - 10px);
-    background-color: transparent;
+    background-color: color.adjust(#5f5f5f, $lightness: 10%);
     border: solid 1px white;
 }
 
@@ -178,8 +182,3 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .cards-section {
-        flex-direction: column;
-    }
-}
