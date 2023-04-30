@@ -1,23 +1,23 @@
 @media screen and (max-width: 768px) {
-    img {
-      max-width: 40%;
-      height: auto;
-    }
-  }
-
-  .image-container {
-    max-width: 60%;
-    height: auto;
-  }
-  
   img {
-    display: block;
-    max-width: 70%;
+    max-width: 40%;
     height: auto;
   }
+}
 
-  @media screen and (max-width: 768px) {
-    .cards-section {
-        flex-direction: column;
-    }
+.image-container {
+  max-width: 60%;
+  height: auto;
+}
+
+img {
+  display: block;
+  max-width: 70%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .cards-section {
+    flex-direction: column;
+  }
 }
